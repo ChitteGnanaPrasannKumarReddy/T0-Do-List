@@ -4,7 +4,7 @@ const itemName = document.getElementById("itemName");
 const itemDate = document.getElementById("itemDate");
 const itemPriority = document.getElementById("itemPriority");
 
-// 🔒 Prevent selecting past dates (HTML level)
+//  Prevent selecting past dates (HTML level
 itemDate.min = new Date().toISOString().split("T")[0];
 
 function saveTodos() {
@@ -21,7 +21,7 @@ function addItem() {
     return;
   }
 
-  // ✅ Correct date comparison (no time bug)
+  //  Correct date comparison (no time bug)
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
@@ -96,3 +96,4 @@ function renderTodos() {
 }
 
 renderTodos();
+
