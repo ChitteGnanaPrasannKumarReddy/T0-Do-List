@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.add-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-section input,
+.add-section select {
+  padding: 8px;
+  flex: 1;
+}
+
+button {
+  padding: 8px 15px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.task.active {
+  background: black;
+  color: white;
+}
+
+.task.completed {
+  background: white;
+  border: 1px solid black;
+}
+
+.task span {
+  flex: 1;
+}
+
+.actions button {
+  margin-left: 5px;
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
